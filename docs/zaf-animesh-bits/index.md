@@ -47,13 +47,13 @@ The primary command channel is `/55`. All commands follow the format:
 
 This documentation is organized into the following sections:
 
-- **[Getting Started](./getting-started)** - Basic setup and HUD navigation
-- **[Commands Reference](./commands-reference)** - Complete command listing
-- **[Animation States](./animation-states)** - State controls and animations  
-- **[Effects & Particles](./effects-particles)** - Visual effects and customization
-- **[Customization](./customization)** - Textures, colors, and materials
-- **[Advanced Features](./advanced-features)** - Dual attachments, external control
-- **[Troubleshooting](./troubleshooting)** - Common issues and solutions
+- **[Getting Started](./zaf-animesh-bits/getting-started)** - Basic setup and HUD navigation
+- **[Commands Reference](./zaf-animesh-bits/commands-reference)** - Complete command listing
+- **[Animation States](./zaf-animesh-bits/animation-states)** - State controls and animations  
+- **[Effects & Particles](./zaf-animesh-bits/effects-particles)** - Visual effects and customization
+- **[Customization](./zaf-animesh-bits/customization)** - Textures, colors, and materials
+- **[Advanced Features](./zaf-animesh-bits/advanced-features)** - Dual attachments, external control
+- **[Troubleshooting](./zaf-animesh-bits/troubleshooting)** - Common issues and solutions
 
 ## Version Information
 
