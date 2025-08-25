@@ -42,7 +42,7 @@ Our flagship animesh attachment system for Second Life featuring:
 
 ## Quick Navigation
 
-- **New Users**: Start with our [Getting Started guides](./tutorial-basics/) to learn the basics
+- **New Users**: Start with our [Getting Started guides](./zaf-animesh-bits/getting-started) to learn the basics
 - **Existing Users**: Jump to specific product documentation for detailed references
 - **Developers**: Check out our technical guides and API documentation
 - **Need Help?**: Visit our troubleshooting sections or community resources
