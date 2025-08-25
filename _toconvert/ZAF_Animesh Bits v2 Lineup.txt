@@ -1,0 +1,1121 @@
+
+Please open this notecard wide. As It will make it worlds more comfortable for you to read.
+╔═════════════════════════╗
+          Z.A.F
+╚═════════════════════════╝
+====================================================================================================
+
+Index
+(1) - Explanation on how the hud and other things works
+(2) - Cock States
+	(2.1) - Directplay command
+(3) - Cock Events
+(4) - KnotGrowth - Knotted Cocks only!
+(5) - Balls Swing animations
+(6) - Balls Induce inflation and weights
+(7) - Effects and Toggle off/on features
+(8) - Overall Rotation & Position
+(9) - Two cock compatibility
+(10) - Send Out Messages
+(11) - Bits Do send out Cum Color info!
+(12) - Sound Edits
+(13) - Piercings
+(14) - Cum/CockWetness Effects&Texturing
+	(14.1)SetGloss
+	(14.2)Cum/CockWetness Texturing
+(15) - Particles
+(16) - Advanced Cum Particle edit commands
+(17) - Coloring Fluids
+(18) - Condom Settings
+(19) - Extras Settings
+	(19.1) - External Control
+(20) - ZAF_Fealine Bits & FelineCanine Reforge
+	(20.1) - Settings
+	(20.2) - Applying Textures
+	(20.3) - Gif Animation code
+
+Tips Image for Hud: (Image saved as ZAF-Bit-Tips-PSA.png)
+https://www.dropbox.com/scl/fi/29jnkcubaj802zgzktf35/ZAF-Bit-Tips-PSA.png?rlkey=tpqa0hla4e9ztbyecayq1zmp5&dl=0
+
+
+NOTES:
+ZAF PBR v2 
+/////////////////////////////////////////////////////////////////
+█Removed/Changed Commands for PBR:
+/////////////////////////////////////////////////////////////////
+~Reason for removed and changed:
+~~They are integrated into new commands
+~~Some channels changed due to better script handling.
+~Removed::
+/55 fb      ///Removed: Handled by Texture Applier Command
+/55 storecock  ///Removed:Now: Handled by (20.2) - Applying Textures
+/55 setextras   //Removed: Now handled by (20.2) - Applying Textures
+/55 pouchcum      ///Removed: Now Handled by (14.2)Cum/CockWetness Texturing
+/55 conc,TextureUUID   //Removed
+/55 conc1,Masking      //Removed
+/55 piercol,	  //Removed: Handled by /551551 pbr,piercing.... command see : Applying Textures section
+
+~Changed::
+/55 close4all   //Now: /55 privacy,0 
+/55 open4all    //Now: /55 privacy,1 
+/55 pouch,On/Off,Trans,Glow     //Now: /55 pouch,On/Off
+/55 setgloss  	//Now Runs on channel /551551  
+/55 piercings,  //Changed:Now only on/off switch ~Its Trans&Glows handled by (20.2) - Applying Textures
+
+
+
+╔═══════════════════════════════════════════════════════════╗
+(1) - Explanation on how the hud and other things works
+╚═══════════════════════════════════════════════════════════╝
+
+Opening the hud you'll be greeted by the first page!
+
+█►【Effects】Within this tab you will find all the basic animations to particles you'd want to use.
+        ~Hide:
+                    ▶ Hides all parts of the color and Cleans.
+                    ▶ Clicking Hide again will Show the bits again.
+        ~Cleans:
+                    ▶ Cleans drippy cum and wetness drips and textures.
+        ~Stop:   
+                    ▶ Stops all throbbing ,twitching and animation related effects, Along with cooming and peeing. 
+                    ▶ Stop will also remove people who had access to your cock.
+        ~ 1 2
+           1 2 3 4
+           ▶Numeric values on the hud with a balls icon close to them, Are all the different Balls Swings you can pick from
+                    ▶▶Swing 1 and 2 is for forward ball bounce , meant for Bottoms.
+                    ▶▶Swing 1 2 3 4 is thrusting ball bounce animations, meant for Tops.
+        ~Throb:
+                    ▶ Causes your cock to pulsate
+        ~Wetness:
+                    ▶ Controls the shine of your Cock and Balls.
+        ~Rubbing effect:
+                    ▶ Causes a rub back and forth effect
+        ~Alpha:
+                    ▶ Hides tip and midsection after pressing again.
+        ~Foreskin: 
+                    ▶ Gives ability to set your foreskin current position and settings to setup your foreskin desired positions when flaccid and erect
+        ~Twitch:
+                    ▶ Will cause your cock to twitch. This also works on flaccid states!
+        ~Pre cum:
+                    ▶ Cause Pre droplets to drip from the tip!
+        ~Splattering:
+                    ▶ Covers the bits in a shiny wet glaze and causing particles to splatter at the base of your cock!
+        ~Cum
+        ~Cumin
+                    ▶ Covers your cock in milky wet glaze of whiteness and causes spunk to rush from your base
+        ~Pee
+        ~Peein
+                    ▶ Covers your cock in wet pee substance and if you were previously covered in cum, Then your cum cover just turned to your pee color!
+        ~Condom
+                   ▶ Enables and Disables Condom layer 
+        ~Two Dots in the upper right corner affects your cum particles, The upper dot sets your climax to be endless, Lower Dot causes your cum particles to stream.
+        
+█►【States】 
+        ▶Contains all the cock positions
+        ~Please wait as your cock reaches the cock position destination before picking another.
+        ~Tilt:
+                    ▶Ability to tilt your cock left/right/up/down!
+                    ▶Red Button resets position!
+        ~Orb Tilt:
+                    ▶Ability to tilt your balls left/right/up/down!
+                    ▶There is a limit to how far they can tilt.
+                    ▶Red Button Resets
+        ~Orb Drop & Lift:
+                    ▶Lifts your balls up or Drop them lower!
+                    ▶Again Red Button Resets!!!!
+
+█►【Settings】
+                    
+        █ Inflation
+        ~"LobSided" ▶ Affects your balls shape, Having one orb hanging lower than the other.
+        
+        ~~Following below is affected by your climax, Your balls will grow to the max size you specify here over time.
+        ~~~Climaxing will shrink your balls. Until it finally reaches the min value you specified.
+        ~"MinThick" ▶ is the minimum thickness your balls can go. 
+        ~"MaxThick" ▶ is the maximum thickness your balls can go. 
+        ~"MinWeight" ▶ is the minimum Weight your balls can go. 
+        ~"MaxWeight" ▶ is the maximum Weight your balls can go.
+        
+        ~"Time" ▶ in seconds how long it will take until your balls inflate by 1 state. This affects both Thickness and Weight
+        ~"DrainSkip" ▶ is the amount of particles emitted to start to deflate your orbs when u climax..Meaning the higher the number the more times you will need to cum before your orbs start to deflate by 1 state. Default 0
+        ~"Pouch"  ▶  Only works if you have Balls active. This adds a pouch warmer for your balls to keep them nice and cozy.
+        
+        █ Texture
+            ~"Gear Icon" Located next to Texture Header.. 
+                ~Ability to change your Gloss settings for your Shaft,Balls,CumShaft,CumBalls,EnviShaft,EnviBalls,EnviCumShaft,EnviCumBalls
+            
+            ~Penis/Balls/Condom/Piercing/Pouch   ▶ Using the arrows you can cycle through several textures affecting your penis or balls
+            
+            ~Tattoo ▶Contains multiple cock and ball textures to style your bits even more.
+            
+            ~ T   ▶ Is for Transparency. Dialog menu pops up which ever you chose
+	    ~ Touch Names of the Texture slots to gain access to input your Texture UUIDS
+            
+        █ Color.
+                ▶ Simply select which part to color! It will receive ✔ correct marker to indicate what you are coloring!
+                ▶ Click and drag your mouse across the color box and see how your cock instantly colors. Or simply touch the color box to apply the colors
+                ▶ The 5 White color pallets underneath the color picker can be used to Store your colors. 
+                     ▶ Touching them will prompt a dialog menu asking if you want to store the color from the color picker or if you wish to use the color that is applied to the color pallet!
+                     ▶ You can also manually color these 5 color pallets.
+█►【Extras】
+        ~Lots to Toggle on/off in this section. You can toggle off Mist Effects/Droplets/Ball Idle animations/Walk Animations/Sound
+        ~Ask Access▶ can be toggled off/on, if toggled Off people will no longer be able to ask access to your bits. But friends you added to your access list will still be able to gain access to control your bits.
+        ~Public Access▶ If toggled On, Anyone who clicks/Touches your bits will be able to control your cock!
+        ~Add Friends ▶ to Access.  Will bring up a Dialog menu where you will  need to fill in your  friends Name in one of the blocks. You can only have 5 Friends added to your access list for now!
+        ~2nd bit Support▶ Allows you to EnableHud to get extra buttons to control your second Cock. 
+                                    ~ Do note this will only work if you have the ability to wear Two animesh cocks. Second Life Premium accounts can wear two animesh Products!
+                                     ~If you do have ability to wear two animesh products then the following will help you
+                                     ~Wear the first cock only. Use the hud and hit the following buttons
+                                     ▶Channel-55
+                                     Touch the 2nd Bit support again and press
+                                     ▶EnableHud  ~This will refresh the hud and you will then see new buttons appear on the left side named Bit1/Bit2/Both this will allow you to control your cocks individually or both at the same time.
+        ~CondomSizeLimit ▶This is to limit the Maximum size your condom will bloat up when climaxing / Peeing into it. Max Size is 21.
+                                    ~And no there is no exploding condom going to happen! Maybe in a update.
+                                    
+        ▶Piercings
+            ~Tip/Mid/Base/Sheath/CockRing/Balls
+            ~All these can be toggled On/Off while CockRing and Balls have alternatives to pick from
+        ▶Particles Presets
+            ~Cum/Pee/Pre/Droplets
+            ~Here you can pick from different particle presets for the mentioned particles. 
+            ~~You can also make your own presets by editing the notecards found inside the Hud, notecards are named as follows !#1cum/!#1pee/!#1pre/!#1wet
+
+
+▁ ▂ ▄ ▅ ▆ ▇ █ 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 █ ▇ ▆ ▅ ▄ ▂ ▁
+╔═════════════════════════════════════════╗
+        ZAF Animesh Bits Commands
+╚═════════════════════════════════════════╝
+
+Native channel
+/55
+
+
+
+/55 usersettings    
+Same as touching your own bits will bring up the menu. Meant for few extras to your bits that is not controlled by Hud
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(2) - Cock States
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+◆States can go between 0 - 18
+/55 play,States
+Example below:
+/55 play,0
+
+◆Alternative
+/55 play,STATE,-,Speed(0.2 - 2.0)
+/55 play,0,-,0.45
+
+◆Special case animations only affects 15 and 18 states
+
+/55 play,15,l
+/55 play,15,r
+/55 play,18,l
+/55 play,18,r         
+
+
+
+◆Tilting for erect cocks!:
+/55 playc,Base,Mid,Tip,Pauser
+
+~Pauser: Is optional 0.2 - 2.0
+~Base: can have a value between  -5 to 5   
+~Mid: can have a value between  -4 to 4
+~Tip: can have a value between  -3 to 3 
+
+~Example of use:
+/55 playc,-3,1,-1
+
+~Usage to only Tilt Tip:
+/55 playc,,,3
+
+~Alternatively you can supply + or -  instead of the numberic value which then will either tilt a state up or down
+~Example tilt only base 1 time up:
+/55 playc,+,,
+
+more examples:
+/55 playc,+,+,+
+/55 playc,,,-
+/55 playc,+,-,-
+
+═════════════════════════════
+(2.1) - Directplay command   
+═════════════════════════════
+/55 directplay,AnimationName
+
+//Extened 
+This command will now be able to set a timer how long you want a directplay animation to play in seconds. As well as play some masturbate animations and idles that will affect your character and the cock at the same time.
+
+/55 directplay,AnimationName,Timer,PlayerAnim,Erection,cockbase,cockmid,cocktip
+
+Setting Timer to 0 plays animation until you press stop on the hud or /55 stop  OR /55 directstop
+CockBase/CockMid/CockTip is used primarily to move particle positions to look more natural with playing animation. It will not cause your animation you are playing to curve the tip or base of the cock during your animation!
+
+~Command to stop your directplay triggers
+/55 directstop
+Do note if you do play another directplay animation right after the other.. it will auto stop the previous directplay anim.
+
+Examples:
+//Masturbate animations
+/55 directplay,pp0,7,paw0,1,0,1,1
+/55 directplay,pp1,7,paw1,1,0,1,1
+/55 directplay,pp2,7,paw2,1,-1,0,1
+/55 directplay,pp3,8,paw3,1,0,0,1
+/55 directplay,pp4,7,paw4,1,0,0,1
+/55 directplay,pp5,11,paw5,1,0,0,1
+/55 directplay,pp6,15,paw6,1,4,1,0
+
+//Dominant anims//
+~Preparing Rub
+/55 directplay,ubit-prep,10,user-prep,1,0,1,1
+
+~Hip Sway
+/55 directplay,ubit-dsway,10,user-dsway,1,0,1,1
+/55 directplay,ubit-dsway,10,user-dsway1,1,0,1,1
+~Example showing you can combine run/walk anims with the sway animation
+/55 directplay,wr30,10,user-dsway,1,-5,-2,-1
+~Example2 {Plays wr30 animation without end, Until you either play another or press stop or /55 directstop}
+/55 directplay,wr30
+
+~Stagger Sway
+/55 directplay,ubit-jonit,20,user-jonit,1,0,1,1
+
+//Feminine anims//
+~Hip Sway
+/55 directplay,ubit-fsway0,10,user-fsway0,1,-5,-2,-1
+/55 directplay,ubit-fsway1,10,user-fsway0,1,-2,1,1
+
+Above can also trigger to only use cock swings with
+/55 directplay,ubit-dsway
+/55 directplay,ubit-jonit
+/55 directplay,ubit-fsway0
+/55 directplay,ubit-fsway1
+
+//////
+//If you wish to make use of the some Walk/Run animations flops
+//////
+Walks
+/55 directplay,w00
+/55 directplay,w10
+/55 directplay,w20
+/55 directplay,w30
+
+Run variants
+/55 directplay,wr00
+/55 directplay,wr10
+/55 directplay,wr20
+/55 directplay,wr30
+
+Turn Animations
+/55 directplay,wtl00
+/55 directplay,wtr00
+
+Anthro Furry Reforged Only:
+/55 directplay,wrf20
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(3) - Cock Events
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+/55 hidebits,0     ~~Hides everything
+/55 hidebits,1      ~~Shows cock once more
+/55 flexicum,-1  -Turns off flexi cum, setting to 1 enables
+
+/55 clean
+/55 stop
+/55 throb,1       ~~ setting value to -1 stops throbbing  /// using Stop command also stops it
+/55 wet
+/55 wetcolor,LSLCOLOR   //This is used to set the prim color of your shine when you are not cum/pee covered
+/55 rub,0         ~~ Value between 0 - 3.. more means faster Alternative animations 4 - 7
+/55 hidetip       ~~55 hidetip cycle through hide sections.. Else you can use it as follows... /55 hidetip,1   to hide tip and /55 hidetip,2 to hide tip and middle,   /55 hidetip,-1  will show parts again
+/55 twitch,0.17,10  ~~/55 twitch,Intensity,Chance
+                            ~~Hud Default values for Intensity is.  0.1 (Light)  0.17 (Default) 0.25 (more) 0.35(evenMore)
+                            ~~Chance default is 10  , meaning 10% chance to twitch. If chance is left blank, then bits will twitch accordingly to last twitch chance. Only a value of 1 - 100 can be given!
+
+
+Animesh Bits v1.5.4.1+ contains Modified version of /55 twitch
+/55 twitch,Timer,Chance,BaseStr,MidStr,TipStr
+********************
+Code explanation below
+Timer - In seconds how long your twitch should take effect. Increasing value can increase the distance and shorter timer reduces the effect
+Chance - Percentage change of triggering
+BaseStr - Strength the twitch for the base part of the cock... value between -6 to 6 can be given
+MidStr  - Strength the twitch for the frontal part of the cock... value between -5 to 5 can be given //Affects Horse tip and values of -6 to 6 can be given
+TipStr  - Strength the twitch for the frontal part of the cock... value between -4 to 4 can be given //Horse Version will ignore this slot
+
+Example: /55 twitch,0.35,10,1,3,3
+********************
+					      	
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════                         
+(4) - KnotGrowth - Knotted Cocks only!
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+/55 kt,Timer,SizeMultiplier
+~Triggers when climaxing. Will remain as long as you are climaxing...If climaxing ends. After 15 Seconds (Editable) your knot will return to default knot size.
+~Timer can be set to any amount of Seconds you'd want your knot to stay thicken. 
+~The SizeMultiplier can be set to a Negative Value example  -5    which will result in reducing your knot size. Do knot that if your knot size is set to a 0.... It cannot shrink down any further.
+~Pressing Stop on the hud will revert knot size to default.      
+/55 kt,15,3        ~Default setting              
+/55 kt,-1           ~Disable KnotGrowth event.
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(5) - Balls Swing animations
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+bsr0_0      
+bsr1_0 
+bs0_0
+bs1_0
+bs2_0
+bs3_0
+
+All these animations can have their last digit edited to change their speeds... Digits can be changed between  0 - 3.  3 Being the fastest Example of code would look as follows
+Following Shows 1 animation with 4 alternative speeds
+/55 ballswing, bs0_0
+/55 ballswing, bs0_1
+/55 ballswing, bs0_2
+/55 ballswing, bs0_3
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(6) - Balls Induce inflation and weights
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+/55 bmult,thickness,weight
+
+This can be used for triggering inflation growth and deflation for your balls without the need of the timer based built in inflation. 
+Command take the persons max and min inflation settings into account, so if the person has their MinThick and MaxThick set to 5 and 10 .... this command cannot increase/decrease their balls-thickness pass those limits
+Here is a example where you can increase your thickness by 5 steps but your weight to remain the same /55 bmult,5,0.
+~Deflation example:
+/55 bmult,-5,0 
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(7) - Effects and Toggle off/on features
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+/55 wetdrops,1     - Enabled wetdroplets to appear when cumcovered or if bits are set to very wet.   -1 disables
+/55 askaccess,-1    - /This disables people for ever asking access to control your bits, But friends you have added to your list or having the bits set to open will allow people to control it once more   
+/55 askaccess,1    - To enable asking access once more.
+/55 walkanims,-1     - To disable balls swing and cock swing animations when walking/flying or running 
+/55 walkanims,1    - Enables above once more
+/55 walkanims,0    - Enables animation only for balls
+
+/55 tup,1      Balls Tilt y-Axis: Any Value between (negative)-5 -> 5. 0 will reset; Negative values for Downwards. Positive for Upwards
+/55 tside,1   Balls Tilt z-Axis:  Any Value between (negative)-5 -> 5. 0 will reset; Negative values for Left. Positive for Right. 
+/55 tilt,Y-Axis,X-Axis     Tilts your bits up along the Y and X axis. Example of code : /55 tilt,90,0    :This will tilt your cock 90 degrees upwards
+
+
+~Command to halt balls slight movement animation. By default this is enabled. 
+/55 banim,1      ~Enable
+/55 banim,-1     ~Disable
+
+~Mesh Cum strands
+/55 goo,IdleAnim,balls,base,mid,tip
+/55 goo,-1,-1,-1,-1,-1     // To turn off Mesh cum
+/55 goo,1,1,1,1,1     // To enable it all again 
+Dashes can be used to skip locations
+/55 goo,-,-,-,-,1     //This only turns on TiP coom without affecting users other settings
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(8) - Overall Rotation & Position
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Following is used to set your cocks position and rotation
+
+/55 tiltrot,Rotation
+/55 tiltrot,<0,0,0,1>
+
+/55 bitloc,Location
+/55 bitloc,<0.088837,0,0.015830>
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(9) - Two cock compatibility
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Do you have a Premium Second Life account and able to wear two animesh products? Now you can wear two cocks at the same time and animate them separately from one another!
+~Can now wear two cocks and control them with the hud!
+Step 1
+    ~Wear 1 copy of your bits and type in the following code below:
+       /55 bits,-1
+    ~This command will set your bits to run on channel -55
+Step 2
+    ~Your hud now needs to be enabled to show extra tools type in the following command whiles wearing your Hud
+     /552 EnableHud
+    ~That will refresh the hud and close it. Opening the hud you will now see a new tab with the following buttons
+    ~~Bits1  -This controls the original cock that runs on channel /55
+    ~~Bits2  -This controls the second cock that runs on channel /-55
+    ~~Both  -Controls both cocks at the same time.  Sends out messages in both channels
+    
+To undo these edits!
+    /-55 bits,1
+    ~will restore your cocks channel to default /55 again!
+    /552 DisableHud  
+    ~Will remove the extra buttons once again.
+    
+    WARNING. Do not change your channels unless you wish 3rd party creations like (Its not Mine) to stop functioning!
+    ~~This command is only for those who ends up wanting to wear two penises and wants them to function separately from one-another     
+    Q- Why can't i simply set my own custom channel?
+    A- To preserve compatibility if another cum system wishes to make use of a second penis. Cool for avatars who has two penises but each cock has its own cum color... 
+         this way modders of such body cum systems can play around with these options!
+         
+NOTE: "Records Customization v1 (Records edit while worn)"  
+            Can only record information from channel 55 so your second cock that will run on negative 55 will not count into this recorder!
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(10) - Send Out Messages
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Enables:
+/55 msgout,1
+
+Disables:
+/55 msgout,-1
+
+Enabled by default!
+Allows bits to send out these commands out into a whisper channel so that it can be used by creators for their Cumlayer systems or Arousal scripts.
+"ballswing","wet","wetdry","clean","rub","knot","hidetip","play","playc","throb","twitch","stop","cum","cumin","pee","peein","splattering","pre","condom"
+
+Above said messages can be accepted through messagelink scripts aswell   
+Examples:
+llMessageLinked(LINK_THIS, 1111, "cum", "");
+llMessageLinked(LINK_THIS, 1111, "play,15", "");
+llMessageLinked(LINK_THIS, 1111, "playc,-3,1,-1", "");
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(11) - Bits Do send out Cum Color info!
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+This command gets sent out for modders/Creators of cum systems to make use of!
+
+~Cum Events
+/55053 anparticle,cumfill,LSLColor,FullBright,-,-,ParticleSize,Constant,Glow,Transparency
+
+~Pee/Splattering events
+/55053 anparticle,splattering,LSLColor,FullBright,-,-,ParticleSize,Constant,Glow,Transparency
+
+~Constant =  1 Means it is endlessly climaxing/peeing
+                    0 Not endless climaxing/peeing
+           
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(12) - Sound Edits
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+/55 Sound,ToggleOnOff,CumVolume,SplatVolume,PeeVolume
+~Volumes must be a float  between 0 - 1.0
+Examples:
+/55 Sound,-1  //Turns off Disable all sounds
+/55 Sound,1  //Turns on
+/55 Sound,-,-,-,0  //Targets only PeeVolume and setting to 0 turns off sound for it
+/55 Sound,ToggleOnOff,CumVolume,SplatVolume,PeeVolume   
+
+Default Setting:
+/55 Sound,1,0.2,0.2,0.4 
+
+
+◆Add custom wet sound:
+WetSfx can have more sounds added preferably 1 - 8. Any more that 8, Can probably cause script memory stack heap! 
+/55 wetsfx,UUID,UUID,UUID,UUID,UUID,UUID,UUID,UUID
+
+~To Reset
+/55 wetsfx 
+
+◆Pee sound file replacer
+/55 psfx,UUID
+
+~To Reset
+/55 psfx
+
+v1.5.2 Edition
+◆Cum sound file replacer
+/55 csfx,UUID
+
+~To Reset
+/55 csfx
+
+~Throbsfx
+/55 throbsound,volume
+Default:
+/55 throbsound,0.01
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(13) - Piercings
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+▶Setting Value to 0, Disables , Setting to 1, Enables. CockRing and BallsPiercing if set to 2 will show alternative options.
+Code Example:
+/55 piercings,TipRing,TipPiercings,MidPiercings,CockRing,Sheath Pierced,BallsPiercing
+
+Examples in use:
+/55 piercings,1,1,1,1,1,1
+/55 piercings,0,1,1,0,1,0
+        
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(14) - Cum/CockWetness Effects&Texturing
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+════════════════
+(14.1)SetGloss
+════════════════
+◆Shinyness + Gloss + Environment Gloss
+
+Code Example:
+/551551 setgloss,ShaftColor,BallsColor,CumShaftColor,CumBallsColor,GlossShaft,GlossBalls,GlossShaft,GlossCumBalls,EnviroShafh,EnviroBalls,EnviroCumShaft,EnviroCumBalls
+
+Default Example:
+/551551 setgloss,<0.25, 0.25, 0.25>,<0.25, 0.25, 0.25>,<0.6,0.6,0.6>,<1,1,1>,166,166,255,255,0,0,0,0
+
+~~~This is 1 command line which can affect all mentioned specular related customization. 
+~~~A dash - can be used to skip a certain section from being tinted, leaving it empty will end the command from that point on.
+~~~Below shows how to use sections seperated from one another SpecColor/Gloss/Environment Gloss.
+
+◆Shinyness
+    ~LSL Color has to be given here. Darker results less shine, Lighter more Shine.
+
+            ▶Shaft + Balls Style : 
+            /551551 setgloss,<0.15,0.15,0.15>,<1,1,1>,<1,1,1>,<1,1,1>
+            ▶Only Shaft : 
+            /551551 setgloss,<0.15,0.15,0.15>
+            ▶Only Balls : 
+            /551551 setgloss,-,<1,1,1> 
+◆Gloss
+~Value between 1 - 255. Dashes - Gets ignored
+/551551 setgloss,-,-,-,-,GlossShaft,GlossBalls,GlossCumShaft,GlossCumBalls
+
+~Default : 
+/551551 setgloss,-,-,-,-,166,166,255,255
+
+~Example only cum gloss edit.
+/551551 setgloss,-,-,-,-,-,-,255,255
+
+◆Environment Gloss
+~Value between 1 - 255
+~Dashes -  Ignores locations
+/551551 setgloss,-,-,-,-,-,-,-,-,EnviroShaft,EnviroBalls,EnviroCumShaft,EnviroCumBalls
+
+~Default : 
+/551551 setgloss,-,-,-,-,-,-,-,-,0,0,0,0
+
+═══════════════════════════════
+(14.2)Cum/CockWetness Texturing  
+═══════════════════════════════
+************************************
+█This has direct effect on your wet layers transparency
+/551551 wetlayer,0.99
+~Above can be a fix to your tattoos vanishing on you if set to a 0 
+--But do know that it will remove some effects on your cock. (Legacy style effects)
+--Your cum layer may just eat your tattoos again ( i really wish Lindens to fix the alpha blend bug, Did not use to be a thing in the past)
+
+█This has direct effect on your cum/pee layers transparency
+/551551 cumlayer,0.99
+
+
+///////////////////
+█Cum and Wetness editor
+///////////////////
+~TextureSlots:
+cum
+cumb
+wet
+wetb
+cumpouch
+wetpouch
+cumcondom
+cumgoo
+
+~Code example:
+/551551 leg,TextureSlot,TextureUUID,vector_repeats,vector_offsets,Rotation,AlphaMode,AlphaMasking,NormalUUID,<1,1,0>,<0,0,0>,0,SpecularUUID,<1,1,0>,<0,0,0>,0
+
+~Example for Swapping Cum Textures:
+/551551 leg,cum,TextureUUID,<1,1,0>,<0,0,0>,0,1,75,NormalUUID,<1,1,0>,<0,0,0>,0,SpecularUUID,<1,1,0>,<0,0,0>,0
+
+Condom Cum filling transparency issue?
+~Copy paste the following command to set the condom fil to Masking
+/551551 leg,cumcondom,-,-,-,-,2
+~Undo and sets condom fill to alpha blend once more
+/551551 leg,cumcondom,-,-,-,-,1
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(15) - Particles
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Following particles below can be forced to have different effects as the following code shows:
+NOTE: This will not permanently change your Cum Settings ... This below is meant to be used by toys or temporary cum affects!
+~ParticleSize : between 0.0 to 3.0.  Can go pass 3 if you really want to >.>
+~Glow: between 	0.0 - 1.0 Higher value is brighter.  
+~Fullbright: 	0 disables 1 enables
+~Constant/Non:  0 disables 1 enables.  Enabling this will result in endless cumming. Until user stops it.
+
+/55 cum,<LsL Color>,ParticleSize,Glow,fullbright,Constant/Non
+
+Example: /55 cum,<1,0,1>,2,0.03,1,1
+
+The code explained above will work for cum/cumin/pee/peein
+Or you can just use the code as shown below, It will use your built in colors that you can customize with your hud.
+/55 cum
+/55 cumin
+/55 pee
+/55 peein
+/55 pre
+
+
+
+
+◆Splattering Color inherits the color that was last present on your cock, So pee = to pee color .. cum = cum color.... If you where cleaned from the start....It will have a translucent white color
+~~StartSpeed: handles in Seconds.  Less is Faster. (Faster)Min 0.2, (Slower)Max 5.9 
+~~Timer: So if you want to make your Cock Splash every 2 seconds.
+/55 splattering,StartSpeed,Timer  
+
+Default:
+/55 splattering, 1.0, 0.2
+Example1: 
+/55 splattering, 2.0, 1.9
+
+
+/55 Constant       - Causes your Particles to never stop until you Press the Stop button.
+/55 NoConstant     - Default Setting, Stops after a certain period 
+/55 fbright,0           -  1 for fullbright 0 for none  Affects All Particles
+/55 particlesize,1      - default cock =  1   75% bigger cock  = 1,6. Affects Overall size of all your particles.
+/55 heat,1              -This turns on mist effect radiating from the cock when covered in cum or splatter effects.
+/55 heat,-1   		-Disables Mist effect
+/55 bust,1  -Causes your cum particles to stream out like a hose pipe.
+/55 bust,0 - Disable it. 
+
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(16) - Advanced Cum Particle edit commands
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Hud now includes particle presets!, Visit the Extras Tab on the hud to see these!.
+~If you wish to add your own custom presets to the hud, Simply open the huds contents and find the notecards named
+~Cum/Pee/Pre/Wet, Open them and paste your command line in and the hud should be able to find your new command in the notecard :). Just make sure your command looks similar to those in the notecard!
+
+★Advance particle edits
+/55 ppedits,EditNumber,Size,CumDistance,Timer,Sleep,AmountTimesEjaculate,Texture,ScaleStart,ScaleENd,MaxTrans,MinTrans,ColorStart,ColorEnd,GlowStart,GlowEnd,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd
+~EditNumber  > Is the section you'd be editing. Do note that only Cum and Pee has trans/color/Glow options to be edited. 
+~Also note that some sections are Dashed - out, cause some particles inherits settings from cum/pee events~!
+~If editing sections please dash out the areas you do not wish to edit so that the script can ignore those areas.
+~If you leave a spot blank. This script will not read any further so if you only planned on scaling the pee size you can use the command as follows /55 ppedits,2,Size    e.g    /55 ppedits,2,15  
+
+~Pre:
+/55 ppedits,0,Size,-,Timer,-,-,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd
+
+~Splattering:
+/55 ppedits,1,Size,-,Timer,-,-,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Pee:
+/55 ppedits,2,Size,Distance,Timer,Sleep,-,Texture,ScaleStart,ScaleENd,MaxTrans,MinTrans,ColorStart,ColorEnd,GlowStart,GlowEnd,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Peein:
+/55 ppedits,3,Size,Distance,Timer,Sleep,-,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Cum:
+/55 ppedits,4,Size,Distance,Timer,Sleep,AmountTimesEjaculate,Texture,ScaleStart,ScaleENd,MaxTrans,MinTrans,ColorStart,ColorEnd,GlowStart,GlowEnd,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Cumin:
+/55 ppedits,5,Size,Distance,Timer,Sleep,AmountTimesEjaculate,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Wetdroplets: 
+/55 ppedits,6,Size,-,Timer,-,-,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+~Steam:
+/55 ppedits,7,Size,-,-,-,-,Texture,ScaleStart,ScaleENd,-,-,-,-,-,-,MaxAge,Burstcount,Burstrate,Burstspeedmax,BurstpeedMin,Accelerate,AngleStart,AngleEnd 
+
+
+After Editing your particles, Make sure to Press Pre/Cum/Pee again to see the changes!
+
+⚫Explanation for each section!⚫
+~These Cannot have a empty value given.
+~~~~Size :   
+                    ▶Affects the Size of your particles 
+                    ▶Do Note : /55 particlesize,1    Still affects overall Particle sizes.
+                    ▶Default 1.0 ...Pre is still affected by overall cum size, but with its own scale being able to be edited       
+~~~~Distance:
+                    ▶Affects the how far your particles will go!
+                    ▶Default is 1.0  ...Example: 0.5  will half the cum/pee distance. Value higher than 1.0 will increase the distance
+~~~~Timer:
+                    ▶Affects the duration to complete your pee/cum event.
+                    ▶Default 1.0 ... Setting a value below 1 will make it go faster, Value above 1 will result in slower
+~~~~Sleep:
+                    ▶Mainly used in Cum events!
+                    ▶Amount of particles being displayed / extend particles emission time.
+                    ▶Default: 1.0
+~~~~AmountTimesEjaculate:
+                    ▶Mainly used in Cum events!
+                    ▶Amount of times you'd ejaculate.
+                    ▶Default: 6
+                    ▶This also affects how many stages your balls will drain, So default being 6, it will drain your balls inflation by 6. But if you want it to drain less, use the DrainSkip on the hud to increase the number of times it has to cum before it affects your balls.
+~~~~TEXTURE
+                    ▶Changes the texture. 
+                    ▶Make copy of your bits before deciding to change your Textures of your particles!
+~~~~StartScale/EndScale
+                    ▶ Vectors scales works on a <X,Y,Z>  so scale your image/texture as you wish!
+                    ▶ Example
+                    ~~Start with a smaller vector like <0.080,0.250,0.0>
+                    ~~End with a larger vector value like : <0.100,0.500,0.0>
+~~~~MaxTrans/MinTrans:
+                    ▶MaxTrans:0.99 ...but any value between 0.0 to 1.0 will work.
+                    ▶MinTrans:0
+~~~~ColorStart/ColorEnd:
+                    ▶Supply LSLCOLOR here.
+~~~~GlowStart/GlowEnd:
+                    ▶Float Value between 0 - 1 can be given. Example 0.02
+~~~~MaxAge:
+                    ▶Numeric value to be given here example ... 1  or 2 or 3 or 10
+                    ▶How long in sections your particles will be visible before they disappear    
+~~~~Burstcount
+                    ▶Numeric value to be given here example ... 1  or 2 or 3 or 10
+                    ▶The amount of particles that spawns!
+                    ▶ Leaving this section empty will ignore this section
+~~~~Burstspeedmax/BurstpeedMin
+                    ▶Affects mostly distance. The higher the float number the further the particles will shoot.
+                    ▶Float number between  0 - 1.0 can be given
+~~~~Accelerate:
+                    ▶Vector has to be given here.
+                    ▶Specifies a directional acceleration vector applied to each particle as it is emitted, in meters per second squared. Valid values are 0.0 to 100.0 for each direction both positive and negative, as region coordinates.                    
+~~~~AngleStart/AngleEnd:            
+                    ▶Float Value given here. 0 - 1
+                    ▶Will cause particles to have a different angle when they get emitted.
+                    
+▶To Undo your changes to the particles. Please use the Hud >>>Extras >>> Particle Presets to get your particles set to default once more.  You can also put your own presets into the huds particle notecards!
+                    
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(17) - Coloring Fluids
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Do note that you can edit your cum color with (17) - Advanced Cum Particle edit commands
+This merely here for a easy way to edit just the color
+
+/55 colorcum,LSLColor
+/55 colorpee,LSLColor
+
+Examples:
+/55 colorcum,<0.40171, 0.85387, 1.00000>
+/55 colorpee,<0.40171, 0.85387, 1.00000>
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(18) - Condom Settings
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Texture:
+Now Handled by texturing command See following section in documentation: (20.2) - Applying Textures & Color and Effects
+
+~On and Off
+/55 condom,1
+/55 condom,-1
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(19) - Extras Settings
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+Masturbate
+
+/55 masturbate 
+----------------------------------------------------------------------------------------------
+Setting Up Length of Each stage (Timers)
+----------------------------------------------------------------------------------------------
+Stage Numbers
+--------------------
+0
+1
+2 - Leaking Throbbing Stage
+3
+4
+5 - Cum stage
+6 - Ending
+
+Timers
+---------
+Want to increase the amount of time you spend pawing off in a certain stage?
+Simply do the following....
+/55 timers,<StageNumber>,<Total amount of Time spending in it in Seconds. Please make sure to give Whole numbers and not values of 0.5.>
+            /--------Replace this 0 With your desired stage.
+           V
+/55 timers,0,10
+              ^
+               \---------------This Number is the total amount of seconds you want to spend in the stage.
+
+═════════════════════════
+(19.1) - External Control
+═════════════════════════
+~~Supported bits v2.04
+
+✦External Control✦ 
+
+NOTE: This new command is not part of your friends access list... it is its own thing.
+/55 bedtoggle,0    //Turns off
+/55 bedtoggle,1   //Turns on
+/55 cleanban        //clean banned UUIDs list
+/55 cleanallow      //cleans allowed UUIDs
+
+
+Following command is to issue a request to animate someones cock.
+~~Person will be prompt with question to accept. They can ignore/ban requests as well as disable the feature on prompt.
+~~If Banned : user will need to clear ban list to recieve msg from ID again /55 cleanban
+~~If Accepted : It will remember, until /55 cleanallow
+
+/5515512 UUIDofPerson,Code,Message
+
+UUIDofPerson: Persons Profile UUID
+Codes: 
+1110  ✦For Directstop + Directplay 
+         ~~Example:  /5515512 UUIDofPerson,1110,Directstop
+1111  ✦For Posing/cum/pee ...Example :  play,15 // playc,1,1,0 // cumin // cum // pee// peein  commands
+         ~~Example:  /5515512 UUIDofPerson,1111,play,15   or  /5515512 UUIDofPerson,1111,cumin
+1     ✦Purely plays a named animation within cock collection. (will set cock to erect state as well) 
+         ~~Example: /5515512 UUIDofPerson,1,ubit-fsway0
+
+
+
+⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+						Unique Command Changes between cocks
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫⚫
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(20) - ZAF_Fealine Bits & FelineCanine Reforge
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+══════════════════╗
+(20.1) - Settings
+══════════════════╝
+Following command is use to fetch setedits info from your worn bit. This can be used along side setedits to manipulate/edit the penis balls size/length/thickness and more aka getedits
+/55 peeninfo
+
+Explanation of code line!
+/55 setedits,PenisStyle,PenisThickness,Length,Barbs,Package,Fur,KnotSize,Lobsided,mininflationthick,maxinflationthick,mininflationweight,maxinflationweight,Timer,drainskip,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,AltSheath,-
+
+~PenisStyle		[Fealine]0 Smooth / 1 Flared tip / 2 Smooth&Knot / 3 Flared&Knotted
+			[FelineCanine Reforge] 0 Feline / 1 Canine tip&Thin Base / 2 Feline+Knot  / 3 Full Canine
+~PenisThickness		0 - 19  Set Thickness for your Smaller States
+~CockLength		0 - 30 Lengths
+~Barbs			-1 Disables // 0 to 7 with multiple barb combos
+~Package		-1  Disables Balls  //  0 balls / 1 balls+ / 2 balls++
+~Fur			-1 Disables 0 crotch fur / 1 crotch fur + balls  / 2 just balls fur
+~KnotSize		0 - 20 knot sizes
+~Lobsided		0 - 4 
+~MinThick		0 - 35 should always be 1 step below MaxThick
+~MaxThick		1 - 36 Should always be 1 step above MinThick
+~MinWeight		0 - 35 Should always be 1 step below MaxWeight
+~MaxWeight		1 - 36 Should always be 1 step above MinWeight
+~Timer			Sets the time in seconds to increase your balls inflation by 1 step
+~BallDrain		Sets the amount of times you hear the climax sound trigger have to climax before your balls starts draining,.Default 3.  Setting it to a 0 means every time you ejaculate your balls will shrink
+~AltSheath		Alternative sheath style. -1 Default / 0 Tilted Down / 1 Tilted up     /// v1.5.3 Cervine -1 Default / 0 Tilted Down / 1 Tilt Down further / 2 Tilt Up
+
+
+Example of code Line
+/55 setedits,1,5,5,1,3,-1,5,0,5,15,7,15,600,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1,-
+
+Example if you only want to edit length.
+~~Dashes can be used to ignore locations. If empty space are given then script command will end. Below it shows it will skip all the way to length and nothing further.
+/55 setedits,-,-,Length
+/55 setedits,-,-,10
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(20.2) - Applying Textures & Color and Effects
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+█Erect State pacer effect:
+/55 pace,1   //Causes erection states to move nearly instant.
+/55 pace,0  //Erect state transitions as default.
+
+█Texture Application channels
+~~Not longer registers texture commands on /55
+551551
+-551551
+
+█Cell-shade {On/Off}
+
+Code Example:
+/551551 cel,Cock,Balls,Fur,Barbs
+
+Simply Toggle on or off sections:: 0 turns off // 1 Turns on
+Example:
+/551551 cel,1,1,1,1
+
+NOTE: Only Cock,Balls,Fur,Barbs Parts have cell-shade effects
+
+//////////////////////////////////////////////////////////////////////////////////
+█Command for all customization for mesh parts.
+//////////////////////////////////////////////////////////////////////////////////
+Working with texturing command 2 rules:
+1. Dash -  ignores locations
+2. Empty spaces will terminate the script from reading the command any further
+
+▶All Texture "Slots"::
+cock
+balls
+ctat		//Cock Tattoo
+btat		//Balls Tattoo
+fur
+pouch
+condom
+piercing
+ccel		//Cock Cell_shade
+fcel		//Fur Cell_shade
+bcel		//Balls Cell_shade
+
+Texture Rotations needs to be given in Radians ... use DEG_TO_RAD to convert 90 DEG to 1.570796 RAD(This is 90 Degrees)
+
+▶Texture applier command:
+/551551 pbr,Slot,pbr1_Not0,Texture,vector_repeats,vector_offsets,float_rotation,LSLColor,float_alpha,integer_gltf_alpha_mode,float_alpha_mask_cutoff,integer_double_sided,NormalUUID,vector_repeats,vector_offsets,float_rotation,MetallicTexture,vector_repeats,vector_offsets,float_rotation,float_metallic,float_roughness,EmissiveTexture,vector_repeats,vector_offsets,float_rotation,vector_emissive_tint,Glow,SpecTex,SpecRepeats,SpecOffset,SpecRot,SpecColor,gloss,envir,fbr,skipnorm
+
+▶Texture Swap Only:
+/551551 pbr,Slot,0,TEXTURE,-,-,-,-,-,-,-,-,NormalTex,-,-,-,MetallicTex,-,-,-,-,-,EmvTex,-,-,-,-,-,SpecTex
+
+▶With Repeats/Offsets/Rotations set to default:
+~~Ready for texture swaps and affects other customization settings
+/551551 pbr,Slot,0,TEXTURE,<1,1,0>,<0,0,0>,0,<1,1,1>,1,0,100,0,NormalTex,<1,1,0>,<0,0,0>,0,MetallicTex,<1,1,0>,<0,0,0>,0,0.1,0.8,EmvTex,<1,1,0>,<0,0,0>,0,<0,0,0>,0,SpecTex,<1,1,0>,<0,0,0>,0,<0,0,0>,166,0,0
+
+▶Usage examples:
+//Full Bright for PBR OFF
+/551551 pbr,Slot,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0
+
+/551551 pbr,Slot,0,TEXTURE,<1,1,0>,<0,0,0>,0,<1,1,1>,1,0,100,0,NormalTex,<1,1,0>,<0,0,0>,0,MetallicTex,<1,1,0>,<0,0,0>,0,0.1,0.8,EmvTex,<1,1,0>,<0,0,0>,0,<0,0,0>,0,SpecTex,<1,1,0>,<0,0,0>,0,<0,0,0>,166,0,0
+
+▶Coloring Examples:
+~~NOTE:Cock coloring also affects Barbs/FleshRim/CockTip
+/551551 pbr,cock,-,-,-,-.-,<0.44621, 1.00000, 0.51575>  
+/551551 pbr,balls,-,-,-,-.-,<0.44621, 1.00000, 0.51575>   
+
+
+▶skipnorm (Found at the very end of the Texture Applier command:
+~Meant to ignore supplied normal maps on the base layers of the cock
+~This can already be achieved if you removed the normal map from the texture command (But its destructive)
+~~This is merely a toggle switch to make it easier to twitch on/off the normal maps without removing normalsUUID from your stored textures.
+~~This creates a legacy feel which normals are only handled on another layer.
+~Setting value to 1  means you disabled normals off your base mesh parts (Creates Legacy Effect)
+~Setting value to 0  enables normals on the base mesh parts aswell (Creates deeper depth look) 
+
+
+
+
+//////////////////////////////////////////////////////////////////
+█Affects Specific targeted mesh areas:
+//////////////////////////////////////////////////////////////////
+~Below is extra mesh parts that can be edited
+~~They share their texture data with other meshes thus reason why they have limited customization. {Tex Optimization reason}
+~~You are able to edit all the following LSLColor,Glow,SpecColor,Gloss,Environment,Emmisive,Metallic,Roughness,Fullbright
+~Slots::
+barbcol
+rimcol
+cocktipcol
+pierccol
+collardat
+celba    --Cell Shade barbs color
+
+/551551 slot,LSLColor,Glow,SpecColor,Gloss,Environment,Emmisive,Metallic,Roughness,Fullbright
+
+Example in Use:
+/551551 rimcol,<1,0,1>,0,<1,1,1>,255,0,0.1,0.2,0.3,0
+
+
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+(20.3) - Gif Animation code
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+█Command to apply gif animations to any part of the cock!
+
+/506901 texanim1,Links,Modes,Faces,SizeX,SizeY,FrameStart,FrameEnd,Framerate
+
+Can store upto 5 Slots
+texanim1
+texanim2
+texanim3
+texanim4
+texanim5
+
+~You can supply multiple links:
+~for the Links slot you can supply links as follows:
+7_26_19  //This example of targeting ObjectName 7 and 26 And 19. "_" used to separate links
+~Same applies to Faces... if multiple links are given you need to supply their face numbers too.
+2_-1_0    /// Here i supplied link 7 with face 2 .  Link 26 got -1 (affects all faces) And link 19 face is 0
+
+~Prefered Object Names to use:
+26   //Balls Tattoo
+8    //Cock Tattoo
+33   //Cock Barbs Tattoo
+
+
+~Modes use the same "_" separator 
+1  //ANIM_ON
+2  //LOOP
+4  //REVERSE
+8  //PING_PONG
+16  //SMOOTH  
+32  //ROTATE  --Does not work with SCALE
+64  //SCALE   --Does not work with ROTATE  Pick Either ROTATE/SCALE
+
+Clears settings for "texanim1" slot.
+/506901 texanim1,-1
+
+Example of Command used for Lighting Tattoo Effect
+/506901 texanim1,26,1_2,-1,3,3,0,9,12
+
+*Deep Delve of my example above
+It targets object name 26 //I only used ANIM_ON and LOOP // -1 for all faces //3 horizontal frames // 3 vertical frames //0 starting Frame// 9 last frame // 12 FrameRate
+
+Example to Target only FrameRate:
+/506901 texanim1,-,-,-,-,-,-,-,12
+
+
+█NOTES:█
+~DO NOT USE FRAMERATE 0 // This is warning from SL Wiki
+~FRAMERATE is a float value so setting to 0.5 will slow down things
+~If a slot is empty aka "texanim1"  and you try to do a FrameSpeed edit: /506901 texanim1,-,-,-,-,-,-,-,12  nothing will happen
+~Make sure you even have a tattoo applied to even see your gif animations 
+~~Following command you can use to simply replace your balls tattoo. Visit █Command for all customization for mesh parts. section of the hud for more texture code info.
+~~~~/551551 pbr,btat,-,TEXTURE,-,-,-,-,-,-,-,-,NormalTex,-,-,-,MetallicTex,-,-,-,-,-,EmvTex,-,-,-,-,-,SpecTex
+
+
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+	Texture Kits
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+Note:
+~FelineCanine/Horse/Cervine/HybridAnthro/DragonAlt/Fealine - Shares the same Balls UVs
+~Dragon/Obsidian Dragon shares the same Orbs UVs.
+
+
+
+
+╔═════════════════════════╗
+    Friend wants Control?
+╚═════════════════════════╝
+Let them click on your bits, It will prompt a message which he/she could ask permission to your bits. Once you have given them permission,
+they have a selection of things they can make your bits do, for example : cum//cumin//Set your cock states...
+To revoke their permissions, Simply Click the Stop Button on your Hud.
+
+Opens/Closes your bits interactive menu to public: 
+~When set to :/55 privacy,1
+~~Anyone can touch and make you cum/pee/change erection states/
+~~Do not worry they cannot change your textures only play with your bits
+/55 privacy,0   //close4all   
+/55 privacy,1 	//open4all    
+
+
+══════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+
+
+╔═════════════════════════╗
+        The End.
+╚═════════════════════════╝
+
+Thank you once more for all your support. I really mean it!
+May these bits bring you countless of hours of splurging goodness! 
+
+Copyright:
+©Johan Bizet 
+& Doppelganger Ghost for lending a hand into texturing.
